@@ -29,64 +29,48 @@
 	<div class="bg-complaint_system">
 	    <div class="container-complaint_system">
 	        <div class="wrap-complaint_system">
-	            <form class="complaint_system-form">
+	            <form class="complaint_system-form ajax_submit" method="POST" autocomplete="off" action="send_complaint">
 	                <span class="complaint_system-form-title">
 	                    Drop Your Complaints 👇
 	                </span>
 
-	                <div class="wrap-input3">
-	                    <input class="input3" type="text" name="subject" placeholder="Subject" required minlength="5">
-	                    <span class="focus-input3"></span>
-	                </div>
+	                <fieldset class="form_loading_controller">
+		                <div class="wrap-input3">
+		                    <input class="input3" type="text" name="subject" placeholder="Subject" required minlength="5">
+		                    <span class="focus-input3"></span>
+		                </div>
 
-	                <div class="wrap-input3">
-	                    <input class="input3" type="email" name="email" placeholder="Email Address (Leave blank if you want it anonymous)">
-	                    <span class="focus-input3"></span>
-	                </div>
+		                <div class="wrap-input3">
+		                    <input class="input3" type="email" name="sender_email" placeholder="Email Address (Leave blank if you want it anonymous)">
+		                    <span class="focus-input3"></span>
+		                </div>
 
-	                <div class="wrap-input3">
-	                    <div>
-	                        <select class="special_select" name="recipient" required>
-	                            <option disabled selected value="">Message Recipient</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                            <option value="00">John Doe Lorem</option>
-	                        </select>
-	                    </div>
-	                    <span class="focus-input3"></span>
-	                </div>
+		                <div class="wrap-input3">
+		                    <div>
+		                        <select class="special_select" name="recipient_email" required>
+		                            <option disabled selected value="">Message Recipient</option>
+		                            <option value="testrecipient023@gmail.com">John Doe Lorem</option>
+		                            <option value="testrecipient033@gmail.com">John Doe Lorem</option>
+		                            <option value="testrecipient043@gmail.com">John Doe Lorem</option>
+		                            <option value="testrecipient0253@gmail.com">John Doe Lorem</option>
+		                            <option value="testrecipient0236@gmail.com">John Doe Lorem</option>
+		                        </select>
+		                    </div>
+		                    <span class="focus-input3"></span>
+		                </div>
 
-	                <div class="wrap-input3">
-	                    <textarea class="input3" name="message" placeholder="Message" rows="8" required minlength="30"></textarea>
-	                    <span class="focus-input3"></span>
-	                </div>
+		                <div class="wrap-input3">
+		                    <textarea class="input3" name="message" placeholder="Message" rows="8" required minlength="30"></textarea>
+		                    <span class="focus-input3"></span>
+		                </div>
 
-	                <div class="container-complaint_system-form-btn">
-	                    <button class="complaint_system-form-btn">
-	                        Submit
-	                    </button>
-	                </div>
+		                <div class="container-complaint_system-form-btn">
+		                    <button class="complaint_system-form-btn" type="submit">
+		                        Submit
+		                    </button>
+		                </div>
+		            </fieldset>
+
 	            </form>
 	        </div>
 	    </div>
