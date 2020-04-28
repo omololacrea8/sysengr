@@ -32,6 +32,27 @@ html {
     font-family: Poppins-Regular, sans-serif;
 }
 
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+fieldset[disabled],
+fieldset[disabled] label,
+fieldset[disabled] input[type="text"],
+fieldset[disabled] input[type="password"],
+fieldset[disabled] input[type="button"],
+fieldset[disabled] input[type="tel"],
+fieldset[disabled] input[type="email"],
+fieldset[disabled] input[type="number"],
+fieldset[disabled] input[type="date"],
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"],
+fieldset[disabled] select,
+fieldset[disabled] textarea {
+  cursor: not-allowed;
+}
+
 /*---------------------------------------------*/
 a {
     font-family: Poppins-Regular;
